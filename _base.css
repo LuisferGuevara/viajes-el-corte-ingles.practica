@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --gray: #efefef;
+  --green: rgba(93, 161, 50, 0.9);
+}
+
+header {
+  background-color: var(--gray);
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,131 @@
+/* PROMOTIONS CARDS SECTION */
+.promotion-section {
+  background-color: var(--gray);
+  border-bottom: 2px solid lightgrey;
+}
+.promotion-container {
+  width: 90%;
+  max-width: 960px;
+  margin: 1% auto;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  justify-content: space-between;
+}
+.promotion-item {
+  background-color: #fff;
+  display: flex;
+  list-style: none;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.promotion-item__card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.promotion-item__imagen {
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.promotion-item__imagen-tag {
+  width: 0;
+  height: 0;
+  border-left: 100px solid rgba(93, 161, 50, 0.9);
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  position: absolute;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+}
+.promotion-item__imagen-tag div {
+  font-size: 13px;
+  position: absolute;
+  left: -100px;
+  top: -20px;
+}
+
+.promotion-item__content {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.promotion-item__content h3 {
+  display: flex;
+  margin-bottom: 1%;
+}
+.promotion-item__content p {
+  display: flex;
+  margin-bottom: 10%;
+}
+.promotion-item__content__meta {
+  display: flex;
+  justify-content: space-between;
+}
+.promotion-item__content__meta-price {
+  display: flex;
+  flex-direction: column;
+}
+.promotion-item__content__meta-price span:first-of-type {
+  font-size: 12px;
+}
+.promotion-price {
+  display: flex;
+  justify-content: center;
+  color: var(--green);
+  font-weight: 600;
+  font-size: x-large;
+}
+.promotion-item__content__meta a {
+  border: 1px solid rgba(93, 161, 50, 0.9);
+  display: flex;
+  padding: 2%;
+  height: 80%;
+  align-self: flex-end;
+  font-size: 12px;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  color: var(--green);
+  overflow: hidden;
+}
+
+.promotion-item__content__meta a i {
+  font-weight: 600;
+  margin-left: 5px;
+}
+.promotion-info {
+  max-width: 960px;
+  margin: 4% auto;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: #fff;
+  padding: 2%;
+}
+.promotion-info h3 {
+  margin-bottom: 1%;
+}
+.promotion-info p {
+  color: gray;
+  margin-bottom: 1%;
+}
+.promotion-info p:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 659px) {
+  .promotion-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .promotion-info {
+    width: 100%;
+    padding: 2% 4% 2% 4%;
+  }
+}
