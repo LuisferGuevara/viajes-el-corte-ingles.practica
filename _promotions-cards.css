@@ -11,66 +11,66 @@
   grid-template-columns: 49% 49%;
   justify-content: space-between;
 }
-.promotion-item {
-  background-color: #fff;
-  display: flex;
+.promotion-container li {
   list-style: none;
-  width: 100%;
   margin-bottom: 5%;
 }
-.promotion-item__card {
+.promotion-card {
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: #fff;
 }
-.promotion-item__imagen {
+.promotion-card__imagen {
   display: flex;
   width: 100%;
   object-fit: cover;
   position: relative;
 }
 
-.promotion-item__imagen-tag {
-  width: 0;
-  height: 0;
-  border-left: 100px solid rgba(93, 161, 50, 0.9);
-  border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  position: absolute;
+.promotion-card__label {
+  background-image: url(/assets/images/Polygon\ 1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
-  color: #fff;
-  flex-direction: column;
-}
-.promotion-item__imagen-tag div {
-  font-size: 13px;
   position: absolute;
-  left: -100px;
-  top: -20px;
+  width: 50%;
+  height: 50%;
+  margin-top: 2%;
+}
+.promotion-card__label-text {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  align-self: center;
+  margin-left: 2%;
+  color: #fff;
 }
 
-.promotion-item__content {
+.promotion-card__content {
   padding: 2%;
   display: flex;
+  height: 100%;
   flex-direction: column;
   justify-content: space-between;
 }
-.promotion-item__content h3 {
+.promotion-card__content h3 {
   display: flex;
   margin-bottom: 1%;
 }
-.promotion-item__content p {
+.promotion-card__content p {
   display: flex;
   margin-bottom: 10%;
 }
-.promotion-item__content__meta {
+.promotion-card__content__meta {
   display: flex;
   justify-content: space-between;
 }
-.promotion-item__content__meta-price {
+.promotion-card__content__meta-price {
   display: flex;
   flex-direction: column;
 }
-.promotion-item__content__meta-price span:first-of-type {
+.promotion-card__content__meta-price span:first-of-type {
   font-size: 12px;
 }
 .promotion-price {
@@ -80,7 +80,7 @@
   font-weight: 600;
   font-size: x-large;
 }
-.promotion-item__content__meta a {
+.promotion-card__content__meta a {
   border: 1px solid rgba(93, 161, 50, 0.9);
   display: flex;
   padding: 2%;
@@ -94,7 +94,7 @@
   overflow: hidden;
 }
 
-.promotion-item__content__meta a i {
+.promotion-card__content__meta a i {
   font-weight: 600;
   margin-left: 5px;
 }

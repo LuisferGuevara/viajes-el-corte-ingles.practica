@@ -6,12 +6,9 @@
 }
 :root {
   --gray: #efefef;
-  --green: rgba(93, 161, 50, 0.9);
+  --green: rgb(116 182 15);
 }
 
-header {
-  background-color: var(--gray);
-}
 img {
   width: 100%;
   object-fit: cover;
