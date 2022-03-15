@@ -163,7 +163,7 @@ header {
 
   .primary-nav__hamburger {
     display: flex;
-    width: 40px;
+    width: 60px;
     height: 40px;
     background-color: #fff;
     border: 0;
@@ -176,6 +176,35 @@ header {
     display: block;
     margin-bottom: 2%;
     margin-top: 10%;
+    position: relative;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background- 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+  .primary-nav__hamburger span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  .primary-nav__hamburger span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+  .primary-nav__buttom:checked ~ .primary-nav__hamburger span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: var(--green);
+  }
+  .primary-nav__buttom:checked
+    ~ .primary-nav__hamburger
+    span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  .primary-nav__buttom:checked
+    ~ .primary-nav__hamburger
+    span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -2px);
   }
 
   .buttom-title {
@@ -288,7 +317,7 @@ header {
 
   .primary-nav__hamburger {
     display: flex;
-    width: 40px;
+    width: 60px;
     border: 0;
     height: 40px;
     background-color: #fff;
@@ -302,6 +331,35 @@ header {
     display: block;
     margin-bottom: 2%;
     margin-top: 10%;
+    position: relative;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background- 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+  .primary-nav__hamburger span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  .primary-nav__hamburger span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+  .primary-nav__buttom:checked ~ .primary-nav__hamburger span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: var(--green);
+  }
+  .primary-nav__buttom:checked
+    ~ .primary-nav__hamburger
+    span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.1, 0.1);
+  }
+  .primary-nav__buttom:checked
+    ~ .primary-nav__hamburger
+    span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
   }
 
   .buttom-title {
@@ -415,5 +473,8 @@ header {
     height: 100%;
     align-self: center;
     margin-right: 29%;
+  }
+  .secondary-nav_hamburger {
+    display: none;
   }
 }
